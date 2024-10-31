@@ -1,0 +1,323 @@
+/* wide screens */
+
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: white;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* navigation bar */
+
+nav a {
+  text-decoration:none;
+  font-weight: bold;
+}
+
+nav {
+  flex-grow: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+nav ul li {
+  list-style-type: none;
+  flex-grow: 1;
+  font-size: 24px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 16px 16px 16px 16px;
+
+  color: black;
+
+  font-size: 100%;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #eaf8ff;
+  border-bottom: 8px solid #55a2be;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #d5e2ff;
+}
+
+h1 {
+  font-size: 28pt;
+  padding-left: 20px;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+em {
+  font-weight: bold;
+}
+
+/* main contents of website */
+
+main {
+  margin: 0 20px;
+}
+
+section {
+  background-color: lightblue;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; /* preserve aspect-ratio */
+  min-width: 300px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-A {
+  flex-grow: 1;
+  margin: 0px 10px 10px 5px;
+}
+
+.project-B {
+  flex-grow: 1;
+  margin: 0px 5px 10px 10px;
+}
+
+.project-A-modal, .project-B-modal {
+  background-color: lightblue;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.title-close {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  font-size: 20pt;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.pair-text-image {
+  display: flex;
+  flex-direction: row;
+}
+
+.pic-of-me {
+  flex-grow: 1;
+  margin: auto;
+}
+
+.bio {
+  flex-grow: 1;
+  margin: 10px 0px 10px 10px;
+}
+
+.contact {
+  flex-grow: 1;
+  margin: 0px 10px 10px 0px;
+}
+
+.skills {
+  flex-grow: 1;
+  margin: 10px 10px 10px 0px;
+}
+
+.cornell-img {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hobby {
+  margin-top: 10px;
+}
+
+.hobby-pics {
+  display: flex;
+  flex-direction: row;
+}
+
+.hobby-A {
+  flex-grow: 1;
+}
+
+.hobby-B {
+  flex-grow: 1;
+}
+
+figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburger-button {
+  margin: 15px;
+  line-height: 0.5;
+  border-color: #55a2be;
+  max-width: 75px;
+}
+
+.line {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.close-menu-button {
+  border-color: #55a2be;
+  font-weight: bold;
+}
+
+#travel-agent-img {
+  display: block;
+  width: 100%;
+  height: auto; /* preserve aspect-ratio */
+  min-width: 300px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border-width: 0;
+}
+
+#insta-case-img {
+  display: block;
+  width: 100%;
+  height: auto; /* preserve aspect-ratio */
+  min-width: 300px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border-width: 0;
+}
+
+.default-cursor {
+  cursor: default;
+}
+
+#close-modal-A, #close-modal-B {
+  border-radius: 100px;
+  width: 75px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-size {
+  max-width: 1300px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.modals img {
+  max-width: 800px;
+}
+
+.title-menu-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* between wide and narrow screens */
+
+@media (max-width: 900px) {
+
+  nav ul {
+      padding: 0px;
+      flex-direction: column;
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+  header {
+      flex-direction: column;
+  }
+
+  main {
+      flex-direction: column;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .pair-text-image {
+    flex-direction: column;
+  }
+
+  .bio {
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  .contact {
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  .pic-of-me {
+    margin-top: 10px;
+  }
+
+  .hobby-pics {
+    flex-direction: column;
+  }
+
+}

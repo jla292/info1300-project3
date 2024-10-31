@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jennifer Ai is a sophomore Information Science Systems and Technology student at Cornell University concentrating in Data Science and User Experience Design.">
+  <title>Jennifer Ai's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css" >
+
+  <!-- Source: https://openclipart.org/download/12848/SABROG-Glass-Blue-Ball.svg -->
+  <link rel="icon" href="images/favicon.svg">
+</head>
+
+<body>
+
+    <header>
+        <div class="title-menu-button">
+            <h1>👋 Hi, I'm Jennifer!</h1>
+            <button class="hamburger-button hidden" type="button">
+                --- --- ---
+            </button>
+        </div>
+
+        <nav class="navigation-menu">
+            <ul>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="projects-main">
+        <h2>Welcome to my website!</h2>
+        <p>I hope you can learn a little bit about my portfolio and about me.</p>
+
+
+        <h2>Projects</h2>
+
+        <div class="projects">
+            <section class="project-A">
+                <!-- Source: (original work) Jennifer Ai-->
+                <h3>Intelligent Travel Agent</h3>
+                <em>Role: Product Designer. Time: Summer 2023.</em>
+                <p>
+                    I worked on this project with a team of front-end and back-end iOS developers who used my designs to create a functioning artificial intelligence chat-bot app that suggests travel itineraries and general travel assistance to the user.
+                </p>
+                <button id="travel-agent-img"><img src="images/travel_agent.png" alt="Travel Agent, show full image"></button>
+            </section>
+
+            <section class="project-B">
+                <!-- Source: (original work) Jennifer Ai-->
+                <h3>Instagram Case Study: Keeping In Touch With Others</h3>
+                <em>Role: Product Designer. Time: Fall 2022.</em>
+                <p>
+                    I created an Instagram concept of adding personalized filters to the Instagram home-feed with the goal of streamlining user experience and engagement with a variety of friends. Check out my design process: <a href="https://medium.com/@jenniferai/instagram-concept-keeping-in-touch-with-people-d16e29e3b239">Case Study Medium Article</a>
+                </p>
+                <button id="insta-case-img"><img src="images/insta_case.png" alt="Instagram Case Study, show full image"></button>
+            </section>
+        </div>
+    </main>
+
+    <div class="modals">
+        <div class="project-A-modal hidden">
+            <section class="modal-size">
+                <div class="title-close">
+                    <h3>Intelligent Travel Agent</h3>
+                    <button id="close-modal-A" type="button">
+                        X
+                    </button>
+                </div>
+                <figure>
+                    <!-- Source: (original work) Jennifer Ai-->
+                    <img src="images/travel_agent.png" alt="screens from travel agent project" width="1024" height="735">
+                </figure>
+            </section>
+        </div>
+
+        <div class="project-B-modal hidden">
+            <section class="modal-size">
+                <div class="title-close">
+                    <h3>Instagram Case Study</h3>
+                    <button id="close-modal-B" type="button">
+                        X
+                    </button>
+                </div>
+                <figure>
+                    <!-- Source: (original work) Jennifer Ai-->
+                    <img src="images/insta_case.png" alt="screens from Instagram case study" width="1136" height="884">
+                </figure>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/menu.js"></script>
+
+</body>
+
+</html>
